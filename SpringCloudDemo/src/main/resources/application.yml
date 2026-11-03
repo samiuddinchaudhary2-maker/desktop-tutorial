@@ -1,0 +1,14 @@
+server:
+  port: 9090
+  
+spring:
+  application:
+    name: config-server	
+
+  cloud:
+   config:
+      server:
+       git:
+         uri: https://github.com/samiuddinchaudhary2-maker/desktop-tutorial.git
+         default-label: main 
+         clone-on-start: true
